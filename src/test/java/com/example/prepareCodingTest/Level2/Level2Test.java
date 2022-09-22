@@ -30,4 +30,16 @@ public class Level2Test {
         System.out.println(result2+"\"");
 
     }
+
+    @Test
+    @DisplayName("이진 변환")
+    void BinaryTransformationTest(){
+        BinaryTransformation binaryTransformation = new BinaryTransformation();
+        int[] answer = binaryTransformation.solution("110010101001");
+        System.out.println(answer[0]+" "+ answer[1]);
+        int[] answer1 = binaryTransformation.solution("01110");
+        System.out.println(answer1[0]+" "+ answer1[1]);
+        int[] answer2 = binaryTransformation.solution("1111111");
+        System.out.println(answer2[0]+" "+ answer2[1]);
+    }
 }

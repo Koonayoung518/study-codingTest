@@ -93,4 +93,16 @@ public class Level1Test {
             System.out.print(answer1[i]+" ");
         }
     }
+
+    @Test
+    @DisplayName("부족한 금액 계산하기")
+    void LackPriceTest() {
+        LackPrice lackPrice = new LackPrice();
+        long answer = lackPrice.solution(3,20,4);
+        System.out.println(answer);
+        long answer1 = lackPrice.solution(2500,10000,2500);
+        System.out.println(answer1);
+
+    }
+
     }

@@ -102,7 +102,15 @@ public class Level1Test {
         System.out.println(answer);
         long answer1 = lackPrice.solution(2500,10000,2500);
         System.out.println(answer1);
-
     }
 
+    @Test
+    @DisplayName("최대공약수와 최소공배수")
+    void GreatestAndLeastTest() {
+        GreatestAndLeast greatestAndLeast = new GreatestAndLeast();
+        int[] answer = greatestAndLeast.solution(3,12);
+        System.out.println(answer[0]+" "+answer[1]);
+        int[] answer1 = greatestAndLeast.solution(2,5);
+        System.out.println(answer1[0]+" "+answer1[1]);
+    }
     }

@@ -28,6 +28,7 @@ public class JadenCase {
     /*
     배열 길이 : length
     문자열 길이 : length()
+    숫자 아스키 코드 : 48~57
     **/
     public String solution(String s){
         String answer ="";

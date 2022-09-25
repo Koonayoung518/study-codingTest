@@ -113,4 +113,17 @@ public class Level1Test {
         int[] answer1 = greatestAndLeast.solution(2,5);
         System.out.println(answer1[0]+" "+answer1[1]);
     }
+
+    @Test
+    @DisplayName("숫자 문자열과 영단어")
+    void NumberAndEnglishTest() {
+        NumberAndEnglish code = new NumberAndEnglish();
+        int answer = code.solution("one4seveneight");
+        System.out.println(answer);
+        int answer1 = code.solution("23four5six7");
+        System.out.println(answer1);
+        int answer2 = code.solution("2three45sixseven");
+        System.out.println(answer2);
+
+    }
     }

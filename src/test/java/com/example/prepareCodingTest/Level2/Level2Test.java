@@ -55,6 +55,31 @@ public class Level2Test {
         int[] D = {3,4};
         int answer1 = makeMin.solution(C,D);
         System.out.println(answer1);
-
+    }
+    @Test
+    @DisplayName("올바른 괄호")
+    void CorrectParenthesisTest(){
+        CorrectParenthesis code = new CorrectParenthesis();
+        boolean answer = code.solution("()()");
+        System.out.println(answer);
+        boolean answer1 = code.solution("(())()");
+        System.out.println(answer1);
+        boolean answer2 = code.solution(")()(");
+        System.out.println(answer2);
+        boolean answer3 = code.solution("(()(");
+        System.out.println(answer3);
+    }
+    @Test
+    @DisplayName("숫자의 표현")
+    void RepresentationOfNumbersTest(){
+        RepresentationOfNumbers code = new RepresentationOfNumbers();
+        int answer = code.solution(15);
+        System.out.println(answer);
+        int answer1 = code.solution(3);
+        System.out.println(answer1);
+        int answer2 = code.solution(7);
+        System.out.println(answer2);
+        int answer3 = code.solution(1);
+        System.out.println(answer3);
     }
 }

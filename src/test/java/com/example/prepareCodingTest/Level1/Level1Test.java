@@ -124,6 +124,16 @@ public class Level1Test {
         System.out.println(answer1);
         int answer2 = code.solution("2three45sixseven");
         System.out.println(answer2);
+    }
+
+    @Test
+    @DisplayName("가운데 글자 가져오기")
+    void BringMiddleWordTest() {
+        BringMiddleWord code = new BringMiddleWord();
+        String answer = code.solution("abcde");
+        System.out.println(answer);
+        String answer1 = code.solution("qwer");
+        System.out.println(answer1);
 
     }
     }

@@ -42,4 +42,19 @@ public class Level2Test {
         int[] answer2 = binaryTransformation.solution("1111111");
         System.out.println(answer2[0]+" "+ answer2[1]);
     }
+
+    @Test
+    @DisplayName("최솟값 만들기")
+    void MakeMinTest(){
+        MakeMin makeMin = new MakeMin();
+        int[] A = {1,4,2};
+        int[] B = {5,4,4};
+        int answer = makeMin.solution(A,B);
+        System.out.println(answer);
+        int[] C = {1,2};
+        int[] D = {3,4};
+        int answer1 = makeMin.solution(C,D);
+        System.out.println(answer1);
+
+    }
 }

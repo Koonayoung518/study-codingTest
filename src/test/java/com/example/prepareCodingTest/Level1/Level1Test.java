@@ -134,6 +134,25 @@ public class Level1Test {
         System.out.println(answer);
         String answer1 = code.solution("qwer");
         System.out.println(answer1);
+    }
 
+    @Test
+    @DisplayName("로또의 최고 순위와 최저 순위")
+    void RankingLottoTest(){
+        RankingLotto code = new RankingLotto();
+        int[] numbers ={44, 1, 0, 0, 31, 25};
+        int[] win_nums ={31, 10, 45, 1, 6, 19};
+        int[] answer = code.solution(numbers, win_nums);
+        System.out.println(answer[0]+" "+answer[1]);
+
+        int[] numbers1 ={0, 0, 0, 0, 0, 0};
+        int[] win_nums1 ={38, 19, 20, 40, 15, 25};
+        int[] answer1 = code.solution(numbers1, win_nums1);
+        System.out.println(answer1[0]+" "+answer1[1]);
+
+        int[] numbers2 ={45, 4, 35, 20, 3, 9};
+        int[] win_nums2 ={20, 9, 3, 45, 4, 35};
+        int[] answer2 = code.solution(numbers2, win_nums2);
+        System.out.println(answer2[0]+" "+answer2[1]);
     }
     }
